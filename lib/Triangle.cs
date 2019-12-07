@@ -10,7 +10,7 @@ namespace Figures
             _sides =new double[]{a_b,b_c,c_d};
             Array.Sort(_sides);
             if (_sides[0]+_sides[1]<_sides[2])
-                throw new ArithmeticException("sides of triangle are not correct");
+                throw new ArgumentException("sides of triangle are not correct");
             A_B = a_b;
             B_C = b_c;
             C_D = c_d;
